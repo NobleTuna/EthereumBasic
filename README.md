@@ -7,8 +7,7 @@
 
 genesis.json
 
-<pre><code>
-{
+<pre><code>{
   "nonce":"0x0000000000000042",
   "timestamp":"0x0",
   "parentHash":"0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -29,13 +28,13 @@ genesis.json
 
 
 geth 초기화
-<pre><code>
-geth --datadir /home/"User"/data_testnet init /home/"User"/data_testnet/genesis.json
+
+<pre><code>geth --datadir /home/"User"/data_testnet init /home/"User"/data_testnet/genesis.json
 </pre></code>
 
 geth 가동
-<pre><code>
-geth --networkid 4649 --nodiscover --maxpeers 0 --datadir /home/"User"/data_testnet console 2>> /home/"User"/data_testnet/geth.log`
+
+<pre><code>geth --networkid 4649 --nodiscover --maxpeers 0 --datadir /home/"User"/data_testnet console 2>> /home/"User"/data_testnet/geth.log`
 </pre></code>
 
 - --networkid 4649 : 네트워크 식별자
