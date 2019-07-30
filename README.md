@@ -34,8 +34,9 @@ geth --datadir /home/"User"/data_testnet init /home/"User"/data_testnet/genesis.
 </pre></code>
 
 geth 가동
-
-`geth --networkid 4649 --nodiscover --maxpeers 0 --datadir /home/"User"/data_testnet console 2>> /home/"User"/data_testnet/geth.log`
+<pre><code>
+geth --networkid 4649 --nodiscover --maxpeers 0 --datadir /home/"User"/data_testnet console 2>> /home/"User"/data_testnet/geth.log`
+</pre></code>
 
 - --networkid 4649 : 네트워크 식별자
 - --nodiscover : 생성자의 노드를 다른 노드에서 검색할 수 없게 하는 옵션.
