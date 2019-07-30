@@ -7,7 +7,7 @@
 
 genesis.json
 
-`
+<pre><code>
 {
   "nonce":"0x0000000000000042",
   "timestamp":"0x0",
@@ -25,13 +25,13 @@ genesis.json
   },
   "alloc":{}
 }
-`
+</pre></code>
 
 
 geth 초기화
-
-`geth --datadir /home/"User"/data_testnet init /home/"User"/data_testnet/genesis.json`
-
+<pre><code>
+geth --datadir /home/"User"/data_testnet init /home/"User"/data_testnet/genesis.json
+</pre></code>
 
 geth 가동
 
