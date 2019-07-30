@@ -6,6 +6,7 @@
 ---
 
 genesis.json
+
 `
 {
   "nonce":"0x0000000000000042",
@@ -26,10 +27,14 @@ genesis.json
 }
 `
 
+
 geth 초기화
+
 `geth --datadir /home/"User"/data_testnet init /home/"User"/data_testnet/genesis.json`
 
+
 geth 가동
+
 `geth --networkid 4649 --nodiscover --maxpeers 0 --datadir /home/"User"/data_testnet console 2>> /home/"User"/data_testnet/geth.log`
 
 - --networkid 4649 : 네트워크 식별자
