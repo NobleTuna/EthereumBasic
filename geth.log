@@ -1139,3 +1139,39 @@ INFO [05-29|21:42:28.936] Blockchain manager stopped
 INFO [05-29|21:42:28.936] Stopping Ethereum protocol 
 INFO [05-29|21:42:28.936] Ethereum protocol stopped 
 INFO [05-29|21:42:28.936] Transaction pool stopped 
+INFO [07-30|20:18:42.756] Maximum peer count                       ETH=0 LES=0 total=0
+WARN [07-30|20:18:42.764] Failed to start smart card hub, disabling: dial unix /run/pcscd/pcscd.comm: connect: no such file or directory 
+INFO [07-30|20:18:42.767] Starting peer-to-peer node               instance=Geth/v1.9.0-unstable-2388e425-20190528/linux-amd64/go1.10.4
+INFO [07-30|20:18:42.767] Allocated trie memory caches             clean=256.00MiB dirty=256.00MiB
+INFO [07-30|20:18:42.768] Allocated cache and file handles         database=/home/lyy7661/data_testnet/geth/chaindata cache=512.00MiB handles=32768
+INFO [07-30|20:18:42.804] Opened ancient database                  database=/home/lyy7661/data_testnet/geth/chaindata/ancient
+INFO [07-30|20:18:42.806] Initialised chain configuration          config="{ChainID: 15 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: <nil> Constantinople: <nil>  ConstantinopleFix: <nil> Engine: unknown}"
+INFO [07-30|20:18:42.806] Disk storage enabled for ethash caches   dir=/home/lyy7661/data_testnet/geth/ethash count=3
+INFO [07-30|20:18:42.806] Disk storage enabled for ethash DAGs     dir=/home/lyy7661/.ethash                  count=2
+INFO [07-30|20:18:42.806] Initialising Ethereum protocol           versions="[63 62]" network=4649 dbversion=7
+INFO [07-30|20:18:42.931] Loaded most recent local header          number=126 hash=bc7951…871e3f td=16953034 age=2mo1d22h
+INFO [07-30|20:18:42.931] Loaded most recent local full block      number=126 hash=bc7951…871e3f td=16953034 age=2mo1d22h
+INFO [07-30|20:18:42.931] Loaded most recent local fast block      number=126 hash=bc7951…871e3f td=16953034 age=2mo1d22h
+INFO [07-30|20:18:42.933] Loaded local transaction journal         transactions=3 dropped=3
+INFO [07-30|20:18:42.935] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [07-30|20:18:42.957] New local node record                    seq=6 id=e1067ac2e06a1afe ip=127.0.0.1 udp=0 tcp=30303
+INFO [07-30|20:18:42.958] Started P2P networking                   self="enode://566e33099963c6b59993ef14b38690c3fc922fe997c1d92eaf04a55aef4c0444a76db61de4ea92dbf166fb3a4e53ca453a913118d35854cefdb2dfccdab71ac5@127.0.0.1:30303?discport=0"
+INFO [07-30|20:18:42.959] IPC endpoint opened                      url=/home/lyy7661/data_testnet/geth.ipc
+INFO [07-30|20:18:43.065] Etherbase automatically configured       address=0x824f65AA23D148015933cC024B4aA15F5c46d337
+INFO [07-30|20:18:45.287] Mapped network port                      proto=tcp extport=30303 intport=30303 interface="UPNP IGDv2-IP1"
+INFO [07-30|20:20:15.314] Your new key was generated               address=0x8E6B48873B8e43F9a1361D3756174eE873EDc15F
+WARN [07-30|20:20:15.314] Please backup your key file!             path=/home/lyy7661/data_testnet/keystore/UTC--2019-07-30T11-20-13.619455600Z--8e6b48873b8e43f9a1361d3756174ee873edc15f
+WARN [07-30|20:20:15.314] Please remember your password! 
+INFO [07-30|20:20:43.754] Your new key was generated               address=0x1d5e60889374cE2abd2f3dDd94eedF4e21206E90
+WARN [07-30|20:20:43.754] Please backup your key file!             path=/home/lyy7661/data_testnet/keystore/UTC--2019-07-30T11-20-42.279920700Z--1d5e60889374ce2abd2f3ddd94eedf4e21206e90
+WARN [07-30|20:20:43.754] Please remember your password! 
+INFO [07-30|21:18:42.938] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [07-30|21:21:34.647] IPC endpoint closed                      url=/home/lyy7661/data_testnet/geth.ipc
+INFO [07-30|21:21:34.647] Writing cached state to disk             block=126 hash=bc7951…871e3f root=a80aaf…a56ad2
+INFO [07-30|21:21:34.647] Persisted trie from memory database      nodes=0 size=0.00B time=5.8µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [07-30|21:21:34.647] Writing cached state to disk             block=125 hash=318abe…428ad3 root=f38ea0…ea4131
+INFO [07-30|21:21:34.647] Persisted trie from memory database      nodes=0 size=0.00B time=2.7µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [07-30|21:21:34.647] Blockchain manager stopped 
+INFO [07-30|21:21:34.647] Stopping Ethereum protocol 
+INFO [07-30|21:21:34.647] Ethereum protocol stopped 
+INFO [07-30|21:21:34.647] Transaction pool stopped 

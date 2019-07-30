@@ -21,3 +21,15 @@ web3.fromWei(eth.getBalance(eth.accounts[2], "ether")
 )
 web3.fromWei(eth.getBalance(eth.accounts[2]), "ether")
 eth.getTransaction("0xa788e981554cdeabac239e2ee6fe1250d416077cc7af24ecbfa5aaab992945a0"  )
+eth.accounts
+eth.accounts[3]
+eth.accounts[4]
+account list
+eth.coinbase
+miner.setEtherbase(eth.accounts[3])
+eth.coinbase
+eth.coinbase[0]
+miner.setEtherbase(eth.accounts[0])
+eth.getBalance(eth.accounts[0])
+eth.blockNumber
+web3.fromWei(eth.getBalance(eth.accounts[0]), "ether")
