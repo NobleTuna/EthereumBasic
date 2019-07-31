@@ -114,3 +114,16 @@ console : 대화형 자바스크립트 콘솔 기동
 
 - 화폐단위 ether로 변환
 <pre><code>web3.fromWei(eth.getBalance(eth.accounts[0]), "ether")</code></pre>  
+
+## 송금
+
+- 트랜잭션 발행은 유료(from에 지정된 주소가 수수료를 지불)이므로 기본적으로 잠금상태. 언락시 해제 유효시간은 기본적으로 300초
+
+
+- 계정 잠금 해제
+<pre><code>personal.unlockAccont(eth.accounts[0], "password")</code></pre>
+
+
+- 송금
+<pre><code>eth.sendTransaction({from:eth.accounts[0], to:eth.accounts[1], value:web3.toWei(10,"ether")})</code></pre>
+
