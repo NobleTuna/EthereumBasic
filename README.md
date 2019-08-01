@@ -34,7 +34,7 @@
 
 
 - geth 가동
-<pre><code>geth --networkid 4649 --nodiscover --maxpeers 0 --datadir /home/"User"/data_testnet console 2>> /home/"User"/data_testnet/geth.log`
+<pre><code>geth --networkid 4649 --nodiscover --maxpeers 0 --datadir /home/"User"/data_testnet console 2>> /home/"User"/data_testnet/geth.log
 </code></pre>  
 
 --networkid 4649 : 네트워크 식별자
