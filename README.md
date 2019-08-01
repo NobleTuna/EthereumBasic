@@ -121,9 +121,26 @@ console : 대화형 자바스크립트 콘솔 기동
 
 
 - 계정 잠금 해제
-<pre><code>personal.unlockAccont(eth.accounts[0], "password")</code></pre>
+<pre><code>personal.unlockAccount(eth.accounts[0], "password")</code></pre>
 
 
-- 송금
+- 송금 (발행한 트랜젝션 ID 출력)
 <pre><code>eth.sendTransaction({from:eth.accounts[0], to:eth.accounts[1], value:web3.toWei(10,"ether")})</code></pre>
+
+
+- 트랜젝션 확인
+<pre><code>eth.getTransaction("transaction id")</code></pre>
+
+
+- 계류 중인 트랜젝션 확인
+<pre><code>eth.pendingTransactions</code></pre>
+
+
+- 블록 확인
+<pre><code>eth.getBlock("blockNumber")</code></pre>
+
+
+
+
+
 
