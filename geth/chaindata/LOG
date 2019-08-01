@@ -126,3 +126,16 @@
 08:11:02.298474 table@remove removed @22
 08:19:31.740263 db@close closing
 08:19:31.740530 db@close done T·265.5µs
+=============== Aug 1, 2019 (DST) ===============
+19:56:26.609938 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:56:26.612023 version@stat F·[0 1] S·64KiB[0B 64KiB] Sc·[0.00 0.00]
+19:56:26.612094 db@open opening
+19:56:26.612442 journal@recovery F·1
+19:56:26.618107 journal@recovery recovering @27
+19:56:26.621420 memdb@flush created L0@30 N·1 S·217B "Las..der,v1698":"Las..der,v1698"
+19:56:26.625715 version@stat F·[1 1] S·65KiB[217B 64KiB] Sc·[0.25 0.00]
+19:56:26.635936 db@janitor F·5 G·1
+19:56:26.635976 db@janitor removing table-26
+19:56:26.637350 db@open done T·25.2339ms
+20:13:56.154163 db@close closing
+20:13:56.154403 db@close done T·239µs

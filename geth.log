@@ -1211,3 +1211,103 @@ INFO [08-01|08:19:31.740] Blockchain manager stopped
 INFO [08-01|08:19:31.740] Stopping Ethereum protocol 
 INFO [08-01|08:19:31.740] Ethereum protocol stopped 
 INFO [08-01|08:19:31.740] Transaction pool stopped 
+INFO [08-01|19:56:26.596] Maximum peer count                       ETH=0 LES=0 total=0
+WARN [08-01|19:56:26.605] Failed to start smart card hub, disabling: dial unix /run/pcscd/pcscd.comm: connect: no such file or directory 
+INFO [08-01|19:56:26.606] Starting peer-to-peer node               instance=Geth/v1.9.0-unstable-2388e425-20190528/linux-amd64/go1.10.4
+INFO [08-01|19:56:26.607] Allocated trie memory caches             clean=256.00MiB dirty=256.00MiB
+INFO [08-01|19:56:26.607] Allocated cache and file handles         database=/home/lyy7661/data_testnet/geth/chaindata cache=512.00MiB handles=32768
+INFO [08-01|19:56:26.642] Opened ancient database                  database=/home/lyy7661/data_testnet/geth/chaindata/ancient
+INFO [08-01|19:56:26.644] Initialised chain configuration          config="{ChainID: 15 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: <nil> Constantinople: <nil>  ConstantinopleFix: <nil> Engine: unknown}"
+INFO [08-01|19:56:26.644] Disk storage enabled for ethash caches   dir=/home/lyy7661/data_testnet/geth/ethash count=3
+INFO [08-01|19:56:26.644] Disk storage enabled for ethash DAGs     dir=/home/lyy7661/.ethash                  count=2
+INFO [08-01|19:56:26.644] Initialising Ethereum protocol           versions="[63 62]" network=4649 dbversion=7
+INFO [08-01|19:56:26.768] Loaded most recent local header          number=126 hash=bc7951…871e3f td=16953034 age=2mo3d22h
+INFO [08-01|19:56:26.768] Loaded most recent local full block      number=126 hash=bc7951…871e3f td=16953034 age=2mo3d22h
+INFO [08-01|19:56:26.768] Loaded most recent local fast block      number=126 hash=bc7951…871e3f td=16953034 age=2mo3d22h
+INFO [08-01|19:56:26.769] Loaded local transaction journal         transactions=0 dropped=0
+INFO [08-01|19:56:26.771] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [08-01|19:56:26.792] New local node record                    seq=8 id=e1067ac2e06a1afe ip=127.0.0.1 udp=0 tcp=30303
+INFO [08-01|19:56:26.792] Started P2P networking                   self="enode://566e33099963c6b59993ef14b38690c3fc922fe997c1d92eaf04a55aef4c0444a76db61de4ea92dbf166fb3a4e53ca453a913118d35854cefdb2dfccdab71ac5@127.0.0.1:30303?discport=0"
+INFO [08-01|19:56:26.794] IPC endpoint opened                      url=/home/lyy7661/data_testnet/geth.ipc
+INFO [08-01|19:56:26.887] Etherbase automatically configured       address=0x824f65AA23D148015933cC024B4aA15F5c46d337
+INFO [08-01|19:56:29.117] Mapped network port                      proto=tcp extport=30303 intport=30303 interface="UPNP IGDv1-IP1"
+INFO [08-01|20:00:54.389] Setting new local account                address=0x824f65AA23D148015933cC024B4aA15F5c46d337
+INFO [08-01|20:00:54.389] Submitted transaction                    fullhash=0x74e5d45ee682f62459c216364a6b3c3a2423e8d3b875dc37d3be74920a7b9bc2 recipient=0x59d83Eabe8EDcea9Ac83feBD6c94f480290E28d1
+INFO [08-01|20:05:24.139] Updated mining threads                   threads=1
+INFO [08-01|20:05:24.139] Transaction pool price threshold updated price=1000000000
+INFO [08-01|20:05:24.140] Commit new mining work                   number=127 sealhash=8a8c8a…0d68e2 uncles=0 txs=0 gas=0 fees=0 elapsed=129.7µs
+INFO [08-01|20:05:24.140] Commit new mining work                   number=127 sealhash=47a27e…4d1d4b uncles=0 txs=1 gas=21000 fees=2.1e-05 elapsed=725.4µs
+INFO [08-01|20:05:32.720] Successfully sealed new block            number=127 sealhash=47a27e…4d1d4b hash=6b1a54…7684ed elapsed=8.579s
+INFO [08-01|20:05:32.720] 🔨 mined potential block                  number=127 hash=6b1a54…7684ed
+INFO [08-01|20:05:32.720] Commit new mining work                   number=128 sealhash=4315eb…1cb522 uncles=0 txs=0 gas=0     fees=0       elapsed=141.1µs
+INFO [08-01|20:05:36.209] Successfully sealed new block            number=128 sealhash=4315eb…1cb522 hash=e4c178…ba1ba2 elapsed=3.489s
+INFO [08-01|20:05:36.209] 🔨 mined potential block                  number=128 hash=e4c178…ba1ba2
+INFO [08-01|20:05:36.209] Commit new mining work                   number=129 sealhash=6a8705…6503a8 uncles=0 txs=0 gas=0     fees=0       elapsed=121.6µs
+INFO [08-01|20:05:36.958] Updated mining threads                   threads=1
+INFO [08-01|20:05:37.486] Successfully sealed new block            number=129 sealhash=6a8705…6503a8 hash=650e04…b2780e elapsed=1.277s
+INFO [08-01|20:05:37.487] 🔨 mined potential block                  number=129 hash=650e04…b2780e
+INFO [08-01|20:05:37.487] Commit new mining work                   number=130 sealhash=2aa5c3…ce1dfc uncles=0 txs=0 gas=0     fees=0       elapsed=109.5µs
+INFO [08-01|20:05:39.343] Successfully sealed new block            number=130 sealhash=2aa5c3…ce1dfc hash=b0da39…f631b6 elapsed=1.856s
+INFO [08-01|20:05:39.343] 🔨 mined potential block                  number=130 hash=b0da39…f631b6
+INFO [08-01|20:05:39.343] Commit new mining work                   number=131 sealhash=3add20…7ef3a5 uncles=0 txs=0 gas=0     fees=0       elapsed=108.9µs
+INFO [08-01|20:05:40.078] Successfully sealed new block            number=131 sealhash=3add20…7ef3a5 hash=06515f…b74427 elapsed=734.519ms
+INFO [08-01|20:05:40.078] 🔨 mined potential block                  number=131 hash=06515f…b74427
+INFO [08-01|20:05:40.078] Commit new mining work                   number=132 sealhash=a69d31…66cd12 uncles=0 txs=0 gas=0     fees=0       elapsed=86.9µs
+INFO [08-01|20:05:40.925] Successfully sealed new block            number=132 sealhash=a69d31…66cd12 hash=d27e6d…e519d4 elapsed=846.535ms
+INFO [08-01|20:05:40.925] 🔨 mined potential block                  number=132 hash=d27e6d…e519d4
+INFO [08-01|20:05:40.925] Commit new mining work                   number=133 sealhash=45a373…3aa536 uncles=0 txs=0 gas=0     fees=0       elapsed=142µs
+INFO [08-01|20:05:41.099] Successfully sealed new block            number=133 sealhash=45a373…3aa536 hash=988850…bff4f3 elapsed=174.168ms
+INFO [08-01|20:05:41.099] 🔨 mined potential block                  number=133 hash=988850…bff4f3
+INFO [08-01|20:05:41.099] Commit new mining work                   number=134 sealhash=b932d3…6b83a1 uncles=0 txs=0 gas=0     fees=0       elapsed=106.8µs
+INFO [08-01|20:05:44.159] Successfully sealed new block            number=134 sealhash=b932d3…6b83a1 hash=d4b150…d68c53 elapsed=3.059s
+INFO [08-01|20:05:44.159] 🔗 block reached canonical chain          number=127 hash=6b1a54…7684ed
+INFO [08-01|20:05:44.159] 🔨 mined potential block                  number=134 hash=d4b150…d68c53
+INFO [08-01|20:05:44.159] Commit new mining work                   number=135 sealhash=459f0e…c326a8 uncles=0 txs=0 gas=0     fees=0       elapsed=85.8µs
+INFO [08-01|20:05:48.101] Successfully sealed new block            number=135 sealhash=459f0e…c326a8 hash=0b513c…9cb2f9 elapsed=3.941s
+INFO [08-01|20:05:48.101] 🔗 block reached canonical chain          number=128 hash=e4c178…ba1ba2
+INFO [08-01|20:05:48.101] 🔨 mined potential block                  number=135 hash=0b513c…9cb2f9
+INFO [08-01|20:05:48.101] Commit new mining work                   number=136 sealhash=3b8172…82211d uncles=0 txs=0 gas=0     fees=0       elapsed=134µs
+INFO [08-01|20:05:50.666] Successfully sealed new block            number=136 sealhash=3b8172…82211d hash=ded72e…bc8250 elapsed=2.565s
+INFO [08-01|20:05:50.666] 🔗 block reached canonical chain          number=129 hash=650e04…b2780e
+INFO [08-01|20:05:50.666] 🔨 mined potential block                  number=136 hash=ded72e…bc8250
+INFO [08-01|20:05:50.666] Commit new mining work                   number=137 sealhash=a02ffb…b300fb uncles=0 txs=0 gas=0     fees=0       elapsed=130.6µs
+INFO [08-01|20:05:53.127] Successfully sealed new block            number=137 sealhash=a02ffb…b300fb hash=1adc9e…afa87d elapsed=2.461s
+INFO [08-01|20:05:53.127] 🔗 block reached canonical chain          number=130 hash=b0da39…f631b6
+INFO [08-01|20:05:53.127] 🔨 mined potential block                  number=137 hash=1adc9e…afa87d
+INFO [08-01|20:05:53.127] Commit new mining work                   number=138 sealhash=cea50d…7ce913 uncles=0 txs=0 gas=0     fees=0       elapsed=129.7µs
+INFO [08-01|20:05:54.084] Successfully sealed new block            number=138 sealhash=cea50d…7ce913 hash=9cec1a…827c69 elapsed=956.261ms
+INFO [08-01|20:05:54.084] 🔗 block reached canonical chain          number=131 hash=06515f…b74427
+INFO [08-01|20:05:54.084] 🔨 mined potential block                  number=138 hash=9cec1a…827c69
+INFO [08-01|20:05:54.084] Commit new mining work                   number=139 sealhash=a2dbf4…c530ee uncles=0 txs=0 gas=0     fees=0       elapsed=122.5µs
+INFO [08-01|20:05:54.245] Successfully sealed new block            number=139 sealhash=a2dbf4…c530ee hash=72af6d…688adf elapsed=160.596ms
+INFO [08-01|20:05:54.245] 🔗 block reached canonical chain          number=132 hash=d27e6d…e519d4
+INFO [08-01|20:05:54.245] 🔨 mined potential block                  number=139 hash=72af6d…688adf
+INFO [08-01|20:05:54.245] Commit new mining work                   number=140 sealhash=3b6c6e…8ecb30 uncles=0 txs=0 gas=0     fees=0       elapsed=75.5µs
+INFO [08-01|20:05:54.863] Successfully sealed new block            number=140 sealhash=3b6c6e…8ecb30 hash=715ba9…fe98af elapsed=617.792ms
+INFO [08-01|20:05:54.863] 🔗 block reached canonical chain          number=133 hash=988850…bff4f3
+INFO [08-01|20:05:54.863] 🔨 mined potential block                  number=140 hash=715ba9…fe98af
+INFO [08-01|20:05:54.863] Mining too far in the future             wait=2s
+INFO [08-01|20:05:56.863] Commit new mining work                   number=141 sealhash=4f9c4d…5c3225 uncles=0 txs=0 gas=0     fees=0       elapsed=2.000s
+INFO [08-01|20:05:57.708] Successfully sealed new block            number=141 sealhash=4f9c4d…5c3225 hash=c323ec…ab19f5 elapsed=845.213ms
+INFO [08-01|20:05:57.708] 🔗 block reached canonical chain          number=134 hash=d4b150…d68c53
+INFO [08-01|20:05:57.708] 🔨 mined potential block                  number=141 hash=c323ec…ab19f5
+INFO [08-01|20:05:57.708] Commit new mining work                   number=142 sealhash=966281…213dd0 uncles=0 txs=0 gas=0     fees=0       elapsed=117.8µs
+INFO [08-01|20:05:58.985] Successfully sealed new block            number=142 sealhash=966281…213dd0 hash=5efe52…e083e2 elapsed=1.277s
+INFO [08-01|20:05:58.986] 🔗 block reached canonical chain          number=135 hash=0b513c…9cb2f9
+INFO [08-01|20:05:58.986] 🔨 mined potential block                  number=142 hash=5efe52…e083e2
+INFO [08-01|20:05:58.986] Commit new mining work                   number=143 sealhash=a82afb…773492 uncles=0 txs=0 gas=0     fees=0       elapsed=100.6µs
+INFO [08-01|20:05:59.566] Successfully sealed new block            number=143 sealhash=a82afb…773492 hash=4f4020…ffefd9 elapsed=580.317ms
+INFO [08-01|20:05:59.566] 🔗 block reached canonical chain          number=136 hash=ded72e…bc8250
+INFO [08-01|20:05:59.566] 🔨 mined potential block                  number=143 hash=4f4020…ffefd9
+INFO [08-01|20:05:59.566] Commit new mining work                   number=144 sealhash=e7dda2…7f18c5 uncles=0 txs=0 gas=0     fees=0       elapsed=82.6µs
+INFO [08-01|20:13:56.153] IPC endpoint closed                      url=/home/lyy7661/data_testnet/geth.ipc
+INFO [08-01|20:13:56.153] Writing cached state to disk             block=143 hash=4f4020…ffefd9 root=dc420b…280850
+INFO [08-01|20:13:56.153] Persisted trie from memory database      nodes=3 size=443.00B time=120.8µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=33 livesize=4.61KiB
+INFO [08-01|20:13:56.153] Writing cached state to disk             block=142 hash=5efe52…e083e2 root=4a6271…f8409a
+INFO [08-01|20:13:56.153] Persisted trie from memory database      nodes=2 size=295.00B time=33.1µs  gcnodes=0 gcsize=0.00B gctime=0s livenodes=31 livesize=4.32KiB
+INFO [08-01|20:13:56.153] Writing cached state to disk             block=16  hash=290e13…999e66 root=fa4c61…511773
+INFO [08-01|20:13:56.153] Persisted trie from memory database      nodes=0 size=0.00B   time=2.8µs   gcnodes=0 gcsize=0.00B gctime=0s livenodes=31 livesize=4.32KiB
+INFO [08-01|20:13:56.154] Blockchain manager stopped 
+INFO [08-01|20:13:56.154] Stopping Ethereum protocol 
+INFO [08-01|20:13:56.154] Ethereum protocol stopped 
+INFO [08-01|20:13:56.154] Transaction pool stopped 
