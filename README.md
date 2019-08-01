@@ -118,21 +118,22 @@ console : 대화형 자바스크립트 콘솔 기동
 ## 송금
 
 - 트랜잭션 발행은 유료(from에 지정된 주소가 수수료를 지불)이므로 기본적으로 잠금상태. 언락시 해제 유효시간은 기본적으로 300초
+- 트랜잭션 발행 후 팬딩중인 트랜잭션은 채굴이 진행되어야 송금됨
 
 
 - 계정 잠금 해제
 <pre><code>personal.unlockAccount(eth.accounts[0], "password")</code></pre>
 
 
-- 송금 (발행한 트랜젝션 ID 출력)
+- 송금 (발행한 트랜잭션 ID 출력)
 <pre><code>eth.sendTransaction({from:eth.accounts[0], to:eth.accounts[1], value:web3.toWei(10,"ether")})</code></pre>
 
 
-- 트랜젝션 확인
+- 트랜잭션 확인
 <pre><code>eth.getTransaction("transaction id")</code></pre>
 
 
-- 계류 중인 트랜젝션 확인
+- 계류 중인 트랜잭션 확인
 <pre><code>eth.pendingTransactions</code></pre>
 
 
