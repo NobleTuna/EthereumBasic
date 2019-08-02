@@ -141,6 +141,40 @@ console : 대화형 자바스크립트 콘솔 기동
 <pre><code>eth.getBlock("blockNumber")</code></pre>
 
 
+## 백그라운드로 Geth 기동
+
+<pre><code>nohup geth --networkid 4649 --datadir /home/"User"/data_testnet/ --mine -minerthreads 1 --rpc &</code></pre>
+
+- --nohup : SIGHUP을 무시한 상태로 프로세스 기동. ㅅ롈로부터 SIGHUP이 전송돼도 무시하기 떄문에 로그아웃 후에도 프로세스가 종료되지 않는다. 중지하기 위해서는 kill 명령어를 사용한다.
+- --mine : 채굴활성화
+- --minerthreads 1 : 채굴에 사용할 CPU 스레드 수. 기본값 1
+- --rpc : HTTP-RPC 서버를 활성화. 별도의 콘솔에 연결할 때 필요한 옵션
+- & : 이 명령을 백그라운드에서 실행
+
+
+
+- Geth 콘솔 접속
+<pre><code>geth attach rpc:http://localhost:8545</code></pre>
+
+
+- 채굴작업 확인
+<pre><code>eth.mining</code></pre>
+
+
+- 콘솔 종료 후 geth 프로세스 확인
+<pre><code>exit</code></pre>
+<pre><code>ps -eaf | grep geth</code></pre>
+
+
+- 프로세스 kill
+<pre><code>kill "process id"</code></pre>
+
+
+
+
+
+
+
 
 
 
