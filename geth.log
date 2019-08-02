@@ -1311,3 +1311,17 @@ INFO [08-01|20:13:56.154] Blockchain manager stopped
 INFO [08-01|20:13:56.154] Stopping Ethereum protocol 
 INFO [08-01|20:13:56.154] Ethereum protocol stopped 
 INFO [08-01|20:13:56.154] Transaction pool stopped 
+invalid command: "2"
+invalid command: "2"
+invalid command: "2"
+invalid command: "2"
+invalid command: "2"
+invalid command: "2"
+invalid command: "2"
+invalid command: "2"
+nohup: ignoring input and appending output to 'nohup.out'
+INFO [08-02|22:54:17.093] Bumping default cache on mainnet         provided=1024 updated=4096
+invalid command: "—networkid"
+nohup: ignoring input and appending output to 'nohup.out'
+INFO [08-02|22:54:27.982] Bumping default cache on mainnet         provided=1024 updated=4096
+invalid command: "—networkid"
