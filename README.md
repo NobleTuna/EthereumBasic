@@ -37,17 +37,17 @@
 <pre><code>geth --networkid 4649 --nodiscover --maxpeers 0 --datadir /home/"User"/data_testnet console 2>> /home/"User"/data_testnet/geth.log
 </code></pre>  
 
---networkid 4649 : 네트워크 식별자
+- `--networkid 4649` : 네트워크 식별자
 
---nodiscover : 생성자의 노드를 다른 노드에서 검색할 수 없게 하는 옵션.
+- `--nodiscover` : 생성자의 노드를 다른 노드에서 검색할 수 없게 하는 옵션.
 
---maxpeers 0 : 생성자의 노드에 연결할 수 있는 노드의 수 지정
+- `--maxpeers 0` : 생성자의 노드에 연결할 수 있는 노드의 수 지정
 
---datadir /home/"User"/data_testnet : 데이터 디렉터리 지정 (미지정시 기본 디렉터리 사용)
+- `--datadir /home/"User"/data_testnet` : 데이터 디렉터리 지정 (미지정시 기본 디렉터리 사용)
 
-console : 대화형 자바스크립트 콘솔 기동
+- `console` : 대화형 자바스크립트 콘솔 기동
 
-2>> /home/"User"/data_testnet/geth.log : 로그파일을 만들기 위한 옵션. geth가 아닌 리눅스 셸 명령어  
+- `2>> /home/"User"/data_testnet/geth.log :` 로그파일을 만들기 위한 옵션. geth가 아닌 리눅스 셸 명령어  
 
 
 - 콘솔 종료
@@ -145,11 +145,11 @@ console : 대화형 자바스크립트 콘솔 기동
 
 <pre><code>nohup geth --networkid 4649 --datadir /home/"User"/data_testnet/ --mine -minerthreads 1 --rpc &</code></pre>
 
-- --nohup : SIGHUP을 무시한 상태로 프로세스 기동. 셸로부터 SIGHUP이 전송돼도 무시하기 떄문에 로그아웃 후에도 프로세스가 종료되지 않는다. 중지하기 위해서는 kill 명령어를 사용한다.
-- --mine : 채굴활성화
-- --minerthreads 1 : 채굴에 사용할 CPU 스레드 수. 기본값 1
-- --rpc : HTTP-RPC 서버를 활성화. 별도의 콘솔에 연결할 때 필요한 옵션
-- & : 이 명령을 백그라운드에서 실행
+- `--nohup` : SIGHUP을 무시한 상태로 프로세스 기동. 셸로부터 SIGHUP이 전송돼도 무시하기 떄문에 로그아웃 후에도 프로세스가 종료되지 않는다. 중지하기 위해서는 kill 명령어를 사용한다.
+- `--mine` : 채굴활성화
+- `--minerthreads 1` : 채굴에 사용할 CPU 스레드 수. 기본값 1
+- `--rpc` : HTTP-RPC 서버를 활성화. 별도의 콘솔에 연결할 때 필요한 옵션
+- `&` : 이 명령을 백그라운드에서 실행
 
 
 
@@ -176,11 +176,11 @@ console : 대화형 자바스크립트 콘솔 기동
 
 <pre><code>nohup geth --networkid 4649 --nodiscover --maxpeers 0 --datadir /home/lyy7661/data_testnet/ --mine --minerthreads 1 --rpc --rpcaddr "0.0.0.0" --rpcport 8545 --rpccorsdomain "*" --rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" 2 >> /home/lyy7661/data_testnet/geth.log &</code></pre>
 
-- --rpc : HTTP-RPC 서버를 활성화 한다
-- --rpcaddr "0.0.0.0" : HTTP-RPC 서버의 수신 IP를 지정한다. 기본값은 "localhost"다. "0.0.0.0"을 지정하면 localhost뿐만 아니라 어떤 인터페이스에 대해 접근해도 수신한다.
-- --rpcport 8545 : HTTP-RPC 서버가 요청을 받기 위해 사용하는 포트를 지정한다. 기본 포트 번호는 8545다.
-- --rpccorsdomain `"*"` : 자신의 노드에 RPC로 접속할 IP주조를 지정한다. 쉼표로 구분해 여러개를 지정할 수 있다. `"*"`로 지정하면 모든 IP에서 접속을 허용한다.
-- --rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" : RPC를 허가할 명령을 지정한다. 쉼표로 구분해 여러 개를 지정할 수 있따. 기본값은 "eth, net, web3" 이다.
+- `--rpc` : HTTP-RPC 서버를 활성화 한다
+- `--rpcaddr` "0.0.0.0" : HTTP-RPC 서버의 수신 IP를 지정한다. 기본값은 "localhost"다. "0.0.0.0"을 지정하면 localhost뿐만 아니라 어떤 인터페이스에 대해 접근해도 수신한다.
+- `--rpcport 8545` : HTTP-RPC 서버가 요청을 받기 위해 사용하는 포트를 지정한다. 기본 포트 번호는 8545다.
+- `--rpccorsdomain "*"` : 자신의 노드에 RPC로 접속할 IP주조를 지정한다. 쉼표로 구분해 여러개를 지정할 수 있다. `"*"`로 지정하면 모든 IP에서 접속을 허용한다.
+- `--rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3"` : RPC를 허가할 명령을 지정한다. 쉼표로 구분해 여러 개를 지정할 수 있따. 기본값은 "eth, net, web3" 이다.
 
 
 
