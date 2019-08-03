@@ -194,12 +194,12 @@
 <pre><code>curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0", "method":"personal_newAccount", "params":["pass3"], "id":10}' localhost:8545</code></pre>
 
 
-**invalid content type, only application/json is supported 에러 발생시 `-H "Content-Type: application/json"`를 붙여 헤더를 수동으로 설정해줘야함**
-https://ethereum.stackexchange.com/questions/30651/geth-response-invalid-content-type-only-application-json-is-supported
+**invalid content type, only application/json is supported 에러 발생시 `-H "Content-Type: application/json"`를 붙여 헤더를 수동으로 설정해줘야 한다.**
+(https://ethereum.stackexchange.com/questions/30651/geth-response-invalid-content-type-only-application-json-is-supported)
 
 
 
-- 계정목록 표시
+- 계정목록 표시 (method : personal_listAccounts)
 <pre><code>curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0", "method":"personal_listAccounts", "params":[], "id":10}' localhost:8545</code></pre>
 
 
@@ -207,11 +207,17 @@ https://ethereum.stackexchange.com/questions/30651/geth-response-invalid-content
 <pre><code>curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0", "method":"eth_mining", "params":[], "id":10}' localhost:8545</code></pre>
   
 
-- 해시 속도 확인 (16진수로 응답)
+- 해시 속도 확인 eth_hashrate
 <pre><code>curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0", "method":"eth_hashrate", "params":[], "id":10}' localhost:8545</code></pre>
 
 
 - 10진수로 변경(셸 명령어)
 <pre><code>printf '%d\n' "0x104fa"</code></pre>
+  
 
-
+- 블록 번호 확인 (method : eth_blockNumber, 16진수로 응답)
+<pre><code>curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0", "method":"eth_blockNumber", "params":[], "id":10}' localhost:8545</code></pre>
+  
+  
+- 계좌 잔고 확인 (method : eth_getBalance, 16진수로 응답)
+<pre><code>curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0", "method":"eth_getBalance", "params":["0x824f65aa23d148015933cc024b4aa15f5c46d337", "latest"], "id":10 }' localhost:8545</code></pre>
