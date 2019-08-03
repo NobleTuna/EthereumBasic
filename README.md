@@ -179,7 +179,7 @@ console : 대화형 자바스크립트 콘솔 기동
 - --rpc : HTTP-RPC 서버를 활성화 한다
 - --rpcaddr "0.0.0.0" : HTTP-RPC 서버의 수신 IP를 지정한다. 기본값은 "localhost"다. "0.0.0.0"을 지정하면 localhost뿐만 아니라 어떤 인터페이스에 대해 접근해도 수신한다.
 - --rpcport 8545 : HTTP-RPC 서버가 요청을 받기 위해 사용하는 포트를 지정한다. 기본 포트 번호는 8545다.
-- --rpccorsdomain "*" : 자신의 노드에 RPC로 접속할 IP주조를 지정한다. 쉼표로 구분해 여러개를 지정할 수 있다. "*"로 지정하면 모든 IP에서 접속을 허용한다.
+- --rpccorsdomain `"*"` : 자신의 노드에 RPC로 접속할 IP주조를 지정한다. 쉼표로 구분해 여러개를 지정할 수 있다. `"*"`로 지정하면 모든 IP에서 접속을 허용한다.
 - --rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" : RPC를 허가할 명령을 지정한다. 쉼표로 구분해 여러 개를 지정할 수 있따. 기본값은 "eth, net, web3" 이다.
 
 
