@@ -145,7 +145,7 @@ console : 대화형 자바스크립트 콘솔 기동
 
 <pre><code>nohup geth --networkid 4649 --datadir /home/"User"/data_testnet/ --mine -minerthreads 1 --rpc &</code></pre>
 
-- --nohup : SIGHUP을 무시한 상태로 프로세스 기동. ㅅ롈로부터 SIGHUP이 전송돼도 무시하기 떄문에 로그아웃 후에도 프로세스가 종료되지 않는다. 중지하기 위해서는 kill 명령어를 사용한다.
+- --nohup : SIGHUP을 무시한 상태로 프로세스 기동. 셸로부터 SIGHUP이 전송돼도 무시하기 떄문에 로그아웃 후에도 프로세스가 종료되지 않는다. 중지하기 위해서는 kill 명령어를 사용한다.
 - --mine : 채굴활성화
 - --minerthreads 1 : 채굴에 사용할 CPU 스레드 수. 기본값 1
 - --rpc : HTTP-RPC 서버를 활성화. 별도의 콘솔에 연결할 때 필요한 옵션
@@ -170,9 +170,17 @@ console : 대화형 자바스크립트 콘솔 기동
 <pre><code>kill "process id"</code></pre>
 
 
+## JSON-RPC
 
+- RPC(remote procedure call) : 별도의 원격 제어를 위한 코딩 없이 다른 주소 공간에서 함수나 프로시저를 실행할 수 있게하는 프로세스 간 통신 기술이다. 다시 말해, 원격 프로시저 호출을 이용하면 프로그래머는 함수가 실행 프로그램에 로컬 위치에 있든 원격 위치에 있든 동일한 코드를 이용할 수 있다.
 
+<pre><code>nohup geth --networkid 4649 --nodiscover --maxpeers 0 --datadir /home/lyy7661/data_testnet/ --mine --minerthreads 1 --rpc --rpcaddr "0.0.0.0" --rpcport 8545 --rpccorsdomain "*" --rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" 2 >> /home/lyy7661/data_testnet/geth.log &</code></pre>
 
+- --rpc : HTTP-RPC 서버를 활성화 한다
+- --rpcaddr "0.0.0.0" : HTTP-RPC 서버의 수신 IP를 지정한다. 기본값은 "localhost"다. "0.0.0.0"을 지정하면 localhost뿐만 아니라 어떤 인터페이스에 대해 접근해도 수신한다.
+- --rpcport 8545 : HTTP-RPC 서버가 요청을 받기 위해 사용하는 포트를 지정한다. 기본 포트 번호는 8545다.
+- --rpccorsdomain "*" : 자신의 노드에 RPC로 접속할 IP주조를 지정한다. 쉼표로 구분해 여러개를 지정할 수 있다. "*"로 지정하면 모든 IP에서 접속을 허용한다.
+- --rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" : RPC를 허가할 명령을 지정한다. 쉼표로 구분해 여러 개를 지정할 수 있따. 기본값은 "eth, net, web3" 이다.
 
 
 
