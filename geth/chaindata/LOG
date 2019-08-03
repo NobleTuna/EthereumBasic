@@ -170,3 +170,39 @@
 23:02:09.587425 table@remove removed @29
 23:03:40.597360 db@close closing
 23:03:40.597622 db@close done T·261.1µs
+=============== Aug 3, 2019 (DST) ===============
+17:25:22.281996 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:25:22.284119 version@stat F·[0 1] S·72KiB[0B 72KiB] Sc·[0.00 0.00]
+17:25:22.284186 db@open opening
+17:25:22.284334 journal@recovery F·1
+17:25:22.288398 journal@recovery recovering @37
+17:25:22.294584 memdb@flush created L0@40 N·654 S·32KiB "\x12\xb5\x03..\xf6\xc5\xc3,v2550":"\xb3\vG.. \x04\xa4,v2548"
+17:25:22.298933 version@stat F·[1 1] S·104KiB[32KiB 72KiB] Sc·[0.25 0.00]
+17:25:22.319765 db@janitor F·5 G·1
+17:25:22.319805 db@janitor removing table-36
+17:25:22.321203 db@open done T·36.9973ms
+17:26:31.243923 table@compaction L0·1 -> L1·1 S·104KiB Q·2930
+17:26:31.253598 table@build created L1@43 N·1637 S·97KiB "\x01j\xcc..\x85\xf7\x03,v1895":"\xf9\x846..\x1f\xf4\x81,v1894"
+17:26:31.253663 version@stat F·[0 1] S·97KiB[0B 97KiB] Sc·[0.00 0.00]
+17:26:31.257134 table@compaction committed F-1 S-7KiB Ke·0 D·246 T·13.0984ms
+17:26:31.258683 table@remove removed @39
+17:26:42.301301 db@close closing
+17:26:42.301548 db@close done T·245.7µs
+=============== Aug 3, 2019 (DST) ===============
+17:29:34.213628 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:29:34.214336 version@stat F·[0 1] S·97KiB[0B 97KiB] Sc·[0.00 0.00]
+17:29:34.214410 db@open opening
+17:29:34.214556 journal@recovery F·1
+17:29:34.218719 journal@recovery recovering @41
+17:29:34.224278 memdb@flush created L0@44 N·429 S·20KiB ".\x8fG..[~\xe8,v2978":"\xe1\x85\x03..\x1d\xf42,v2979"
+17:29:34.228570 version@stat F·[1 1] S·117KiB[20KiB 97KiB] Sc·[0.25 0.00]
+17:29:34.248650 db@janitor F·5 G·1
+17:29:34.248691 db@janitor removing table-40
+17:29:34.250007 db@open done T·35.5704ms
+17:30:37.091179 table@compaction L0·1 -> L1·1 S·117KiB Q·3360
+17:30:37.098835 table@build created L1@47 N·1923 S·114KiB "\x01j\xcc..\x85\xf7\x03,v1895":"\xf9\x846..\x1f\xf4\x81,v1894"
+17:30:37.098960 version@stat F·[0 1] S·114KiB[0B 114KiB] Sc·[0.00 0.00]
+17:30:37.102342 table@compaction committed F-1 S-3KiB Ke·0 D·143 T·11.0891ms
+17:30:37.103882 table@remove removed @43
+18:35:13.286678 db@close closing
+18:35:13.287116 db@close done T·437.5µs
