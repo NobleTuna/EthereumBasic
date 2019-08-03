@@ -48,7 +48,7 @@
 `console` : 대화형 자바스크립트 콘솔 기동
 
 `2>> /home/"User"/data_testnet/geth.log :` 로그파일을 만들기 위한 옵션. geth가 아닌 리눅스 셸 명령어  
-
+  
 
 - 콘솔 종료
 <pre><code>exit</code></pre>  
@@ -154,7 +154,7 @@
 `--rpc` : HTTP-RPC 서버를 활성화. 별도의 콘솔에 연결할 때 필요한 옵션
 
 `&` : 이 명령을 백그라운드에서 실행
-
+  
 
 
 - Geth 콘솔 접속
@@ -188,9 +188,9 @@
 
 `--rpccorsdomain "*"` : 자신의 노드에 RPC로 접속할 IP주조를 지정한다. 쉼표로 구분해 여러개를 지정할 수 있다. `"*"`로 지정하면 모든 IP에서 접속을 허용한다.
 
-`--rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3"` : RPC를 허가할 명령을 지정한다. 쉼표로 구분해 여러 개를 지정할 수 있따. 기본값은 "eth, net, web3" 이다.
+`--rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3"` : RPC를 허가할 명령을 지정한다. 쉼표로 구분해 여러 개를 지정할 수 있다. 기본값은 "eth, net, web3" 이다.
 
-
+  
 
 
 
