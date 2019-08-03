@@ -178,7 +178,7 @@
 
 - RPC(remote procedure call) : 별도의 원격 제어를 위한 코딩 없이 다른 주소 공간에서 함수나 프로시저를 실행할 수 있게하는 프로세스 간 통신 기술이다. 다시 말해, 원격 프로시저 호출을 이용하면 프로그래머는 함수가 실행 프로그램에 로컬 위치에 있든 원격 위치에 있든 동일한 코드를 이용할 수 있다.
 
-<pre><code>nohup geth --networkid 4649 --nodiscover --maxpeers 0 --datadir /home/lyy7661/data_testnet/ --mine --minerthreads 1 --rpc --rpcaddr "0.0.0.0" --rpcport 8545 --rpccorsdomain "*" --rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" 2 >> /home/lyy7661/data_testnet/geth.log &</code></pre>
+<pre><code>nohup geth --networkid 4649 --nodiscover --maxpeers 0 --datadir /home/lyy7661/data_testnet/ --mine --minerthreads 1 --rpc --rpcaddr "0.0.0.0" --rpcport 8545 --rpccorsdomain "*" --rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" 2>> /home/lyy7661/data_testnet/geth.log &</code></pre>
 
 `--rpc` : HTTP-RPC 서버를 활성화 한다
 
@@ -189,9 +189,29 @@
 `--rpccorsdomain "*"` : 자신의 노드에 RPC로 접속할 IP주조를 지정한다. 쉼표로 구분해 여러개를 지정할 수 있다. `"*"`로 지정하면 모든 IP에서 접속을 허용한다.
 
 `--rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3"` : RPC를 허가할 명령을 지정한다. 쉼표로 구분해 여러 개를 지정할 수 있다. 기본값은 "eth, net, web3" 이다.
+  
+- 계정생성  
+<pre><code>curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0", "method":"personal_newAccount", "params":["pass3"], "id":10}' localhost:8545</code></pre>
 
+
+**invalid content type, only application/json is supported 에러 발생시 `-H "Content-Type: application/json"`를 붙여 헤더를 수동으로 설정해줘야함**
+https://ethereum.stackexchange.com/questions/30651/geth-response-invalid-content-type-only-application-json-is-supported
+
+
+
+- 계정목록 표시
+<pre><code>curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0", "method":"personal_listAccounts", "params":[], "id":10}' localhost:8545</code></pre>
+
+
+- 현재 채굴 여부 표시
+<pre><code>curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0", "method":"eth_mining", "params":[], "id":10}' localhost:8545</code></pre>
   
 
+- 해시 속도 확인 (16진수로 응답)
+<pre><code>curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0", "method":"eth_hashrate", "params":[], "id":10}' localhost:8545</code></pre>
 
+
+- 10진수로 변경(셸 명령어)
+<pre><code>printf '%d\n' "0x104fa"</code></pre>
 
 
